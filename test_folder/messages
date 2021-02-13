@@ -1,0 +1,461 @@
+Dec  9 04:52:15 gc3imx6dl-abda32 syslog.info syslogd started: BusyBox v1.22.1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel: klogd started: BusyBox v1.22.1 (2018-03-23 17:16:36 MDT)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Booting Linux on physical CPU 0x0
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel: Linux version 3.14.28-linear-r96-linear-r287 (cschalk@cschalk-dev) (gcc version 4.9.1 (GCC) ) #1 SMP PREEMPT Fri Mar 23 16:57:28 MDT 2018
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: CPU: ARMv7 Processor [412fc09a] revision 10 (ARMv7), cr=10c53c7d
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Machine model: Linear i.MX6 DualLite GC3 Board
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: cma: CMA: reserved 320 MiB at 3c000000
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Memory policy: Data cache writealloc
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: On node 0 totalpages: 262144
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: free_area_init_node: node 0, pgdat 80d92ec0, node_mem_map ab757000
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel:   DMA zone: 2048 pages used for memmap
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel:   DMA zone: 0 pages reserved
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel:   DMA zone: 262144 pages, LIFO batch:31
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: PERCPU: Embedded 8 pages/cpu @ab731000 s8896 r8192 d15680 u32768
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: pcpu-alloc: s8896 r8192 d15680 u32768 alloc=8*4096
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: pcpu-alloc: [0] 0 [0] 1 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 260096
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel: Kernel command line: console=ttymxc4,115200 root=/dev/mmcblk0p2 video=mxcfb0:dev=lcd,EDT-WVGA,if=RGB24,bpp=32 rootwait rw
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: PID hash table entries: 4096 (order: 2, 16384 bytes)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: Memory: 696748K/1048576K available (7016K kernel code, 344K rwdata, 6184K rodata, 316K init, 414K bss, 351828K reserved, 0K highmem)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel: Virtual kernel memory layout:
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel:     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel:     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel:     vmalloc : 0xc0800000 - 0xff000000   (1000 MB)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel:     lowmem  : 0x80000000 - 0xc0000000   (1024 MB)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel:     pkmap   : 0x7fe00000 - 0x80000000   (   2 MB)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel:     modules : 0x7f000000 - 0x7fe00000   (  14 MB)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel:       .text : 0x80008000 - 0x80cec560   (13202 kB)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel:       .init : 0x80ced000 - 0x80d3c2c0   ( 317 kB)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel:       .data : 0x80d3e000 - 0x80d942c0   ( 345 kB)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel:        .bss : 0x80d942cc - 0x80dfbba8   ( 415 kB)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Preemptible hierarchical RCU implementation.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: NR_IRQS:16 nr_irqs:16 16
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: L310 cache controller enabled
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: l2x0: 16 ways, CACHE_ID 0x410000c8, AUX_CTRL 0x32050000, Cache size: 512 kB
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: failed to set parent of clk gpu2d_core_sel to pll2_pfd1_594m: -22
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Switching to timer-based delay loop
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: sched_clock: 32 bits at 3000kHz, resolution 333ns, wraps every 1431655765682ns
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: CPU identified as i.MX6DL, silicon rev 1.3
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Console: colour dummy device 80x30
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 6.00 BogoMIPS (lpj=30000)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pid_max: default: 32768 minimum: 301
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: CPU: Testing write buffer coherency: ok
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Setting up static identity map for 0x106ac880 - 0x106ac8d8
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: CPU1: Booted secondary processor
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Brought up 2 CPUs
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: SMP: Total of 2 processors activated.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: CPU: All CPU(s) started in SVC mode.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: devtmpfs: initialized
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pinctrl core: initialized pinctrl subsystem
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: regulator-dummy: no parameters
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: NET: Registered protocol family 16
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: DMA: preallocated 256 KiB pool for atomic coherent allocations
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: cpuidle: using governor ladder
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: cpuidle: using governor menu
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: CPU identified as i.MX6DL, silicon rev 1.3
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Use WDOG1 as reset source
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: syscon 20c8000.anatop: regmap [mem 0x020c8000-0x020c8fff] registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: vdd1p1: 800 <--> 1375 mV at 1100 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: vdd3p0: 2800 <--> 3150 mV at 3000 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: vdd2p5: 2000 <--> 2750 mV at 2400 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: cpu: 725 <--> 1450 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: vddpu: 725 <--> 1450 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: vddsoc: 725 <--> 1450 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: syscon 20e0000.iomuxc-gpr: regmap [mem 0x020e0000-0x020e0037] registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: syscon 21bc000.ocotp-ctrl: regmap [mem 0x021bc000-0x021bffff] registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: hw-breakpoint: maximum watchpoint size is 4 bytes.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: imx6dl-pinctrl 20e0000.iomuxc: initialized IMX pinctrl driver
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: bio: create slab <bio-0> at 0
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mxs-dma 110000.dma-apbh: initialized
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usb_otg_vbus: 5000 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: vgaarb: loaded
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: i2c-core: driver [max17135] using legacy suspend method
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: i2c-core: driver [max17135] using legacy resume method
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel: SCSI subsystem initialized
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: libata version 3.00 loaded.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver usbfs
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver hub
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new device driver usb
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: usbphy_nop1.12 supply vcc not found, using dummy regulator
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: usbphy_nop2.13 supply vcc not found, using dummy regulator
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: i2c i2c-0: IMX I2C adapter registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: i2c i2c-1: IMX I2C adapter registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: i2c i2c-2: IMX I2C adapter registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Linux video capture interface: v2.00
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pps_core: LinuxPPS API ver. 1 registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: PTP clock support registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: imx-ipuv3 2400000.ipu: IPU DMFC NORMAL mode: 1(0~1), 5B(4,5), 5F(6,7)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mxc_mipi_csi2 21dc000.mipi_csi: i.MX MIPI CSI2 driver probed
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mxc_mipi_csi2 21dc000.mipi_csi: i.MX MIPI CSI2 dphy version is 0x3130302a
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: MIPI CSI2 driver module loaded
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Advanced Linux Sound Architecture Driver Initialized.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: cfg80211: Calling CRDA to update world regulatory domain
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Switched to clocksource mxc_timer1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: NET: Registered protocol family 2
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: TCP: Hash tables configured (established 8192 bind 8192)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: TCP: reno registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: UDP hash table entries: 512 (order: 2, 16384 bytes)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: NET: Registered protocol family 1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: RPC: Registered named UNIX socket transport module.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: RPC: Registered udp transport module.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: RPC: Registered tcp transport module.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice root: Starting watchdog
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: PCI: CLS 0 bytes, default 64
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: hw perfevents: enabled with ARMv7 Cortex-A9 PMU driver, 7 counters available
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Bus freq driver module loaded
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: futex hash table entries: 512 (order: 3, 32768 bytes)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel: VFS: Disk quotas dquot_6.5.2
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel: NFS: Registering the id_resolver key type
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel: Key type id_resolver registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel: Key type id_legacy registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: fuse init (API version 7.22)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: msgmni has been set to 2000
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: io scheduler noop registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: io scheduler deadline registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: io scheduler cfq registered (default)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: imx-weim 21b8000.weim: Driver registered.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: imx6q-pcie 1ffc000.pcie: PCI host bridge to bus 0000:00
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pci_bus 0000:00: root bus resource [io  0x1000-0x10000]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pci_bus 0000:00: root bus resource [mem 0x01000000-0x01efffff]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: pci 0000:00:00.0: [16c3:abcd] type 01 class 0x060400
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: pci 0000:00:00.0: reg 0x10: [mem 0x00000000-0x000fffff]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: pci 0000:00:00.0: reg 0x38: [mem 0x00000000-0x0000ffff pref]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: pci 0000:00:00.0: supports D1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: pci 0000:00:00.0: PME# supported from D0 D1 D3hot D3cold
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: PCI: bus0: Fast back to back transfers disabled
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: pci 0000:01:00.0: [168c:0034] type 00 class 0x028000
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: pci 0000:01:00.0: reg 0x10: [mem 0x00000000-0x0007ffff 64bit]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: pci 0000:01:00.0: reg 0x30: [mem 0x00000000-0x0000ffff pref]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: pci 0000:01:00.0: supports D1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: pci 0000:01:00.0: PME# supported from D0 D1 D3hot
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: PCI: bus1: Fast back to back transfers disabled
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: pci_bus 0000:01: busn_res: [bus 01-ff] end is updated to 01
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pci 0000:00:00.0: BAR 0: assigned [mem 0x01000000-0x010fffff]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pci 0000:00:00.0: BAR 8: assigned [mem 0x01100000-0x011fffff]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pci 0000:00:00.0: BAR 9: assigned [mem 0x01200000-0x012fffff pref]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pci 0000:00:00.0: BAR 6: assigned [mem 0x01300000-0x0130ffff pref]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pci 0000:01:00.0: BAR 0: assigned [mem 0x01100000-0x0117ffff 64bit]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pci 0000:01:00.0: BAR 6: assigned [mem 0x01200000-0x0120ffff pref]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pci 0000:00:00.0: PCI bridge to [bus 01]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pci 0000:00:00.0:   bridge window [mem 0x01100000-0x011fffff]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pci 0000:00:00.0:   bridge window [mem 0x01200000-0x012fffff pref]
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pcieport 0000:00:00.0: Signaling PME through PCIe PME interrupt
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pci 0000:01:00.0: Signaling PME through PCIe PME interrupt
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: pcie_pme 0000:00:00.0:pcie01: service driver pcie_pme loaded
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: backlight.25 supply power not found, using dummy regulator
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: MIPI DSI driver module loaded
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mxc_sdc_fb fb.23: registered mxc display driver lcd
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: imx_epdc_fb 20f4000.epdc: can't get/select pinctrl
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: imx-sdma 20ec000.sdma: no iram assigned, using external mem
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: imx-sdma 20ec000.sdma: no event needs to be remapped
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: imx-sdma 20ec000.sdma: loaded firmware 3.1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: imx-sdma 20ec000.sdma: initialized
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pfuze100-regulator 1-0008: Full layer: 2, Metal layer: 1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pfuze100-regulator 1-0008: FAB: 0, FIN: 0
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pfuze100-regulator 1-0008: pfuze100 found.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: SW1AB: 300 <--> 1875 mV at 1175 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: SW1C: 300 <--> 1875 mV at 1175 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: SW2: 800 <--> 3300 mV at 3300 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: SW3A: 400 <--> 1975 mV at 1350 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: SW3B: 400 <--> 1975 mV at 1500 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: SW4: 800 <--> 1975 mV at 1800 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: SWBST: 5000 <--> 5150 mV at 5150 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: VSNVS: 1000 <--> 3000 mV at 3000 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: VREFDDR: 750 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: VGEN1: 800 <--> 1550 mV at 1200 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: VGEN2: 800 <--> 1550 mV at 1500 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: VGEN3: 1800 <--> 3300 mV at 2800 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: VGEN4: 1800 <--> 3300 mV at 1800 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: VGEN5: 1800 <--> 3300 mV at 3000 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: VGEN6: 1800 <--> 3300 mV at 2800 mV 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: 2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 58, base_baud = 5000000) is a IMX
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: 21e8000.serial: ttymxc1 at MMIO 0x21e8000 (irq = 59, base_baud = 5000000) is a IMX
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: 21ec000.serial: ttymxc2 at MMIO 0x21ec000 (irq = 60, base_baud = 5000000) is a IMX
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: 21f0000.serial: ttymxc3 at MMIO 0x21f0000 (irq = 61, base_baud = 5000000) is a IMX
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: 21f4000.serial: ttymxc4 at MMIO 0x21f4000 (irq = 62, base_baud = 5000000) is a IMX
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: console [ttymxc4] enabled
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: serial: Freescale lpuart driver
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: imx sema4 driver is registered.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: [drm] Initialized drm 1.1.0 20060810
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: [drm] Initialized vivante 1.0.0 20120216 on minor 0
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: brd: module loaded
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: loop: module loaded
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: at24 1-0050: 128 byte 24c01 EEPROM, writable, 16 bytes/write
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: at24 1-0051: 128 byte 24c01 EEPROM, writable, 16 bytes/write
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: at24 1-0054: 128 byte 24c01 EEPROM, writable, 16 bytes/write
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: at24 1-0057: 128 byte 24c01 EEPROM, writable, 16 bytes/write
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: monza 1-006e: MONZA: chip.byte_len 1088
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: MONZA: num_addresses = 1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: monza 1-006e: 1088 byte monza8k RFID Tag
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: imx6dl-pinctrl 20e0000.iomuxc: pin MX6DL_PAD_GPIO_18 already requested by 20e0000.iomuxc; cannot claim for 2188000.ethernet
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: imx6dl-pinctrl 20e0000.iomuxc: pin-135 (2188000.ethernet) status -22
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: imx6dl-pinctrl 20e0000.iomuxc: could not request pin 135 (MX6DL_PAD_GPIO_18) from group enetgrp-4  on device 20e0000.iomuxc
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: fec 2188000.ethernet: Error applying setting, reverse things back
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: 2188000.ethernet supply phy not found, using dummy regulator
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: fec 2188000.ethernet: failed to get phy-reset-gpios: -16
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: pps pps0: new PPS source ptp0
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: fec 2188000.ethernet (unregistered net_device): Invalid MAC address: 00:00:00:00:00:00
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: fec 2188000.ethernet (unregistered net_device): Using random MAC address: 86:ca:82:ab:da:32
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: libphy: fec_enet_mii_bus: probed
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: fec 2188000.ethernet eth0: registered PHC device 0
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver asix
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver ax88179_178a
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver cdc_ether
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver net1080
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver zaurus
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver cdc_ncm
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver qmi_wwan
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: ehci-pci: EHCI PCI platform driver
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver cdc_acm
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver cdc_wdm
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver usb-storage
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver usbserial
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver option
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbserial: USB Serial support registered for GSM modem (1-port)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: 2184800.usbmisc supply vbus-wakeup not found, using dummy regulator
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: ci_hdrc ci_hdrc.0: EHCI Host Controller
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: hub 1-0:1.0: USB hub found
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: hub 1-0:1.0: 1 port detected
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: 2184200.usb supply vbus not found, using dummy regulator
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: ci_hdrc ci_hdrc.1: doesn't support gadget
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: ci_hdrc ci_hdrc.1: EHCI Host Controller
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: ci_hdrc ci_hdrc.1: new USB bus registered, assigned bus number 2
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: ci_hdrc ci_hdrc.1: USB 2.0 started, EHCI 1.00
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: hub 2-0:1.0: USB hub found
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: hub 2-0:1.0: 1 port detected
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mousedev: PS/2 mouse device common for all mice
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: i2c-core: driver [isl29023] using legacy suspend method
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: i2c-core: driver [isl29023] using legacy resume method
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: snvs_rtc 20cc034.snvs-rtc-lp: rtc core: registered 20cc034.snvs-rtc-lp as rtc0
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: i2c /dev entries driver
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mxc_v4l2_output v4l2_out.28: V4L2 device registered as video16
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mxc_v4l2_output v4l2_out.28: V4L2 device registered as video17
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: i2c-core: driver [mag3110] using legacy suspend method
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: i2c-core: driver [mag3110] using legacy resume method
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: imx2-wdt 20bc000.wdog: IMX2+ Watchdog Timer enabled. timeout=60s (nowayout=0)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: device-mapper: ioctl: 4.27.0-ioctl (2013-10-30) initialised: dm-devel@redhat.com
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: sdhci: Secure Digital Host Controller Interface driver
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: sdhci: Copyright(c) Pierre Ossman
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmc0: no vqmmc regulator found
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmc0: no vmmc regulator found
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmc0: SDHCI controller on 2198000.usdhc [2198000.usdhc] using ADMA
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmc1: no vqmmc regulator found
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmc1: no vmmc regulator found
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmc1: SDHCI controller on 2194000.usdhc [2194000.usdhc] using ADMA
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmc2: no vqmmc regulator found
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmc2: no vmmc regulator found
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmc0: BKOPS_EN bit is not set
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmc0: new high speed DDR MMC card at address 0001
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmcblk0: mmc0:0001 SEM04G 3.68 GiB 
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmcblk0boot0: mmc0:0001 SEM04G partition 1 2.00 MiB
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmcblk0boot1: mmc0:0001 SEM04G partition 2 2.00 MiB
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmcblk0rpmb: mmc0:0001 SEM04G partition 3 2.00 MiB
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel:  mmcblk0: p1 p2 p3 p4
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mmc2: SDHCI controller on 2190000.usdhc [2190000.usdhc] using ADMA
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: galcore: clk_get vg clock failed, disable vg!
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Galcore version 5.0.11.25762
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel:  mmcblk0boot1: unknown partition table
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel:  mmcblk0boot0: unknown partition table
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mxc_vdoa 21e4000.vdoa: i.MX Video Data Order Adapter(VDOA) driver probed
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: mxc_vpu 2040000.vpu: VPU initialized
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: caam 2100000.caam: Instantiated RNG4 SH0
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: caam 2100000.caam: Instantiated RNG4 SH1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: caam 2100000.caam: device ID = 0x0a160100 (Era 4)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: caam 2100000.caam: job rings = 2, qi = 0
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: caam algorithms registered in /proc/crypto
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: caam_jr 2101000.jr0: registering rng-caam
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbcore: registered new interface driver usbhid
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: usbhid: USB HID core driver
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: max98090 1-0010: No platform data
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: imx-max98090 sound-a.19: max98090 <-> 2028000.ssi mapping ok
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: 	***SYSCLK 12000000
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: max98090 1-0010: No audio clocks configured
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: imx-max98090 sound-b.20: ASoC: Failed to create card debugfs directory
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: max98090 1-0011: Failed to reset codec: -5
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: max98090 1-0011: Failed to read device revision: -1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: max98090 1-0011: ASoC: failed to probe CODEC -1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: imx-max98090 sound-b.20: ASoC: failed to instantiate card -1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: imx-max98090 sound-b.20: snd_soc_register_card failed (-1)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: imx-max98090: probe of sound-b.20 failed with error -1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: imx-cell sound-cell.21: cell-codec-dai <-> 202c000.ssi mapping ok
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: NET: Registered protocol family 26
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: TCP: cubic registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: NET: Registered protocol family 10
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: sit: IPv6 over IPv4 tunneling driver
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: NET: Registered protocol family 17
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: NET: Registered protocol family 15
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: 8021q: 802.1Q VLAN Support v1.8
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel: Key type dns_resolver registered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: failed to disable 1.2 GHz OPP
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: VGEN3: disabling
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: VGEN2: disabling
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: regulator-dummy: disabling
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: imx mcc test is registered.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: input: gpio-keys.18 as /devices/soc0/gpio-keys.18/input/input0
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: snvs_rtc 20cc034.snvs-rtc-lp: setting system clock to 2020-12-09 04:51:59 UTC (1607489519)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: ALSA device list:
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel:   #0: max98090-audio
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel:   #1: cell-audio
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: EXT3-fs (mmcblk0p2): error: couldn't mount because of unsupported optional features (240)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: EXT2-fs (mmcblk0p2): error: couldn't mount because of unsupported optional features (240)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: devtmpfs: mounted
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: Freeing unused kernel memory: 316K (80ced000 - 80d3c000)
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info kernel: udevd[179]: starting version 182
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: PCI: enabling device 0000:01:00.0 (0140 -> 0142)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: ath: EEPROM regdomain: 0x6a
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: ath: EEPROM indicates we should expect a direct regpair map
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: ath: Country alpha2 being used: 00
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: ath: Regpair used: 0x6a
+Dec  9 04:52:15 gc3imx6dl-abda32 user.debug kernel: ieee80211 phy0: Selected rate control algorithm 'minstrel_ht'
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: ieee80211 phy0: Atheros AR9462 Rev:2 mem=0xc0f00000, irq=155
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: irq = 271
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: set tp reset pin to 0
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: ov5640_read_reg:write reg error:reg=300a
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: camera ov5640_mipi is not found
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: set tp reset pin to 1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: input: ft5x0x_ts as /devices/virtual/input/input1
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: [FTS] Firmware version = 0x2
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: [FTS] report rate is 100Hz.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: [FTS] touch threshold is 100.
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: ERROR: v4l2 capture: slave not found!
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: ERROR: v4l2 capture: slave not found!
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: EXT4-fs (mmcblk0p3): mounted filesystem with ordered data mode. Opts: (null)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: EXT4-fs (mmcblk0p4): recovery complete
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: EXT4-fs (mmcblk0p4): mounted filesystem with ordered data mode. Opts: (null)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: data=ordered
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel: random: dd urandom read with 122 bits of entropy available
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice kernel: random: nonblocking pool is initialized
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: #### NETDEV_UP:lo ####
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: fec 2188000.ethernet eth0: no PHY, assuming direct connection to switch
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: libphy: PHY fixed-0:00 not found
+Dec  9 04:52:15 gc3imx6dl-abda32 user.err kernel: fec 2188000.ethernet eth0: could not attach to PHY
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: #### NETDEV_UP:wlan0 ####
+Dec  9 04:52:15 gc3imx6dl-abda32 user.info kernel: IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+Dec  9 04:52:15 gc3imx6dl-abda32 user.warn kernel: #### NETDEV_CHANGE:wlan0 ####
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info watchdog[987]: starting daemon (5.13):
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info watchdog[987]: int=10s realtime=yes sync=no soft=no mla=0 mem=1
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info watchdog[987]: ping: no machine to check
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info watchdog[987]: file: no file to check
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info watchdog[987]: pidfile: no server process to check
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info watchdog[987]: interface: no interface to check
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info watchdog[987]: test=/usr/sbin/watchdog.sh(0) repair=none(0) alive=/dev/watchdog heartbeat=none temp=none to=root no_act=no
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info watchdog[987]: hardware watchdog identity: imx2+ watchdog
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info avahi-daemon[995]: Found user 'avahi' (UID 996) and group 'avahi' (GID 995).
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info avahi-daemon[995]: Successfully dropped root privileges.
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info avahi-daemon[995]: avahi-daemon 0.6.31 starting up.
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info avahi-daemon[995]: Successfully called chroot().
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info avahi-daemon[995]: Successfully dropped remaining capabilities.
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info avahi-daemon[995]: Loading service file /services/sftp-ssh.service.
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info avahi-daemon[995]: Loading service file /services/ssh.service.
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info avahi-daemon[995]: Network interface enumeration completed.
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info avahi-daemon[995]: Registering HINFO record with values 'ARMV7L'/'LINUX'.
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info avahi-daemon[995]: Server startup complete. Host name is gc3imx6dl-abda32.local. Local service cookie is 511686976.
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info avahi-daemon[995]: Service "gc3imx6dl-abda32" (/services/ssh.service) successfully established.
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info avahi-daemon[995]: Service "gc3imx6dl-abda32" (/services/sftp-ssh.service) successfully established.
+Dec  9 04:52:15 gc3imx6dl-abda32 cron.info crond[999]: (CRON) STARTUP (1.4.11)
+Dec  9 04:52:15 gc3imx6dl-abda32 cron.info crond[999]: (CRON) INFO (Syslog will be used instead of sendmail.)
+Dec  9 04:52:15 gc3imx6dl-abda32 cron.info crond[999]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 51% if used.)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice root: Running local boot scripts (/etc/rc.local)
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice root: /etc/rc.local...
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice root: GC3 Versions = 14.1.0-3908
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice root: Setup amixer
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info avahi-daemon[995]: Got SIGTERM, quitting.
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.info avahi-daemon[995]: avahi-daemon 0.6.31 exiting.
+Dec  9 04:52:15 gc3imx6dl-abda32 daemon.err rpcbind: rpcbind terminating on signal. Restart with "rpcbind -w"
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice root: ipaddr =
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice root: Starting updated...
+Dec  9 04:52:15 gc3imx6dl-abda32 user.notice root: Result 0
+Dec  9 04:52:16 gc3imx6dl-abda32 user.info kernel: bio: create slab <bio-1> at 1
+Dec  9 04:52:16 gc3imx6dl-abda32 user.notice root: udev/mount.sh [/dev/dm-0] is blacklisted, ignoring
+Dec  9 04:52:17 gc3imx6dl-abda32 user.notice root: udev/mount.sh [/dev/dm-0] is blacklisted, ignoring
+Dec  9 04:52:17 gc3imx6dl-abda32 user.notice root: udev/mount.sh [/dev/dm-0] is blacklisted, ignoring
+Dec  9 04:52:17 gc3imx6dl-abda32 user.info kernel: bio: create slab <bio-1> at 1
+Dec  9 04:52:17 gc3imx6dl-abda32 user.notice root: udev/mount.sh [/dev/dm-0] is blacklisted, ignoring
+Dec  9 04:52:17 gc3imx6dl-abda32 user.info kernel: EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+Dec  9 04:52:17 gc3imx6dl-abda32 user.notice root: Starting modelview...
+Dec  9 04:52:17 gc3imx6dl-abda32 user.notice root: Result 0
+Dec  9 04:52:18 gc3imx6dl-abda32 user.notice root: lcd on
+Dec  9 04:52:18 gc3imx6dl-abda32 user.notice root: lcd on
+Dec  9 04:52:22 gc3imx6dl-abda32 user.notice root: Starting gc3-api...
+Dec  9 04:52:22 gc3imx6dl-abda32 user.notice root: Result 0
+Dec  9 04:52:30 gc3imx6dl-abda32 user.info kernel: usb 2-1: new high-speed USB device number 2 using ci_hdrc
+Dec  9 04:52:30 gc3imx6dl-abda32 user.info kernel: option 2-1:1.0: GSM modem (1-port) converter detected
+Dec  9 04:52:30 gc3imx6dl-abda32 user.info kernel: usb 2-1: GSM modem (1-port) converter now attached to ttyUSB0
+Dec  9 04:52:30 gc3imx6dl-abda32 user.warn kernel: qmi_wwan_probe
+Dec  9 04:52:30 gc3imx6dl-abda32 user.warn kernel: qmi_wwan_bind
+Dec  9 04:52:30 gc3imx6dl-abda32 user.info kernel: qmi_wwan 2-1:1.2: cdc-wdm0: USB WDM device
+Dec  9 04:52:30 gc3imx6dl-abda32 user.info kernel: qmi_wwan 2-1:1.2 wwan0: register 'qmi_wwan' at usb-ci_hdrc.1-1, WWAN/QMI device, 7e:79:3f:ad:42:41
+Dec  9 04:52:30 gc3imx6dl-abda32 user.info kernel: option 2-1:1.3: GSM modem (1-port) converter detected
+Dec  9 04:52:30 gc3imx6dl-abda32 user.info kernel: usb 2-1: GSM modem (1-port) converter now attached to ttyUSB1
+Dec  9 04:52:30 gc3imx6dl-abda32 user.info kernel: option 2-1:1.4: GSM modem (1-port) converter detected
+Dec  9 04:52:30 gc3imx6dl-abda32 user.info kernel: usb 2-1: GSM modem (1-port) converter now attached to ttyUSB2
+Dec  9 04:52:30 gc3imx6dl-abda32 user.info kernel: option 2-1:1.5: GSM modem (1-port) converter detected
+Dec  9 04:52:30 gc3imx6dl-abda32 user.info kernel: usb 2-1: GSM modem (1-port) converter now attached to ttyUSB3
+Dec  9 04:52:30 gc3imx6dl-abda32 user.info kernel: option 2-1:1.6: GSM modem (1-port) converter detected
+Dec  9 04:52:30 gc3imx6dl-abda32 user.info kernel: usb 2-1: GSM modem (1-port) converter now attached to ttyUSB4
+Dec  9 04:52:30 gc3imx6dl-abda32 user.notice root: add-ID_MODEL_ID=1201
+Dec  9 04:52:32 gc3imx6dl-abda32 user.warn kernel: PU: Power-off latency exceeded, new value 27333 ns
+Dec  9 04:52:39 gc3imx6dl-abda32 user.info kernel: wlan0: authenticate with 3c:37:86:d7:91:80
+Dec  9 04:52:39 gc3imx6dl-abda32 user.info kernel: wlan0: send auth to 3c:37:86:d7:91:80 (try 1/3)
+Dec  9 04:52:39 gc3imx6dl-abda32 user.info kernel: wlan0: authenticated
+Dec  9 04:52:39 gc3imx6dl-abda32 user.info kernel: wlan0: AP has invalid WMM params (AIFSN=1 for ACI 2), disabling WMM
+Dec  9 04:52:39 gc3imx6dl-abda32 user.info kernel: wlan0: associate with 3c:37:86:d7:91:80 (try 1/3)
+Dec  9 04:52:39 gc3imx6dl-abda32 user.info kernel: wlan0: RX AssocResp from 3c:37:86:d7:91:80 (capab=0x411 status=0 aid=15)
+Dec  9 04:52:39 gc3imx6dl-abda32 user.warn kernel: #### NETDEV_CHANGE:wlan0 ####
+Dec  9 04:52:39 gc3imx6dl-abda32 user.info kernel: IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+Dec  9 04:52:39 gc3imx6dl-abda32 user.info kernel: wlan0: associated
+Dec  9 04:52:39 gc3imx6dl-abda32 user.notice root: [wifi_hotplug.sh]:  ACTION:change Ethernet Link is [down] 
+Dec  9 04:52:39 gc3imx6dl-abda32 user.warn kernel: #### NETDEV_CHANGE:wlan0 ####
+Dec  9 04:52:39 gc3imx6dl-abda32 user.notice root: [wifi_hotplug.sh]:  ACTION:change wlan0 Link is [up] 
+Dec  9 04:52:39 gc3imx6dl-abda32 user.notice root: [wifi_hotplug.sh]: handle link state: up
+Dec  9 04:52:39 gc3imx6dl-abda32 user.notice root: [wifi_hotplug.sh]: release Wireless DHCP
+Dec  9 04:52:39 gc3imx6dl-abda32 user.notice root: [wifi_hotplug.sh]: renew Wireless DHCP
+Dec  9 04:52:40 gc3imx6dl-abda32 user.notice root: [wifi_hotplug.sh]:  ACTION:change Ethernet Link is [down] 
+Dec  9 04:52:40 gc3imx6dl-abda32 user.notice root: [wifi_hotplug.sh]:  ACTION:change wlan0 Link is [up] 
+Dec  9 04:52:40 gc3imx6dl-abda32 user.notice root: [wifi_hotplug.sh]: handle link state: up
+Dec  9 04:52:40 gc3imx6dl-abda32 user.notice root: [wifi_hotplug.sh]: release Wireless DHCP
+Dec  9 04:52:40 gc3imx6dl-abda32 user.notice root: [wifi_hotplug.sh]: renew Wireless DHCP
+Dec  9 04:53:56 gc3imx6dl-abda32 user.warn kernel: PU: Power-on latency exceeded, new value 2258000 ns
+Dec  9 04:56:32 gc3imx6dl-abda32 user.warn kernel: PU: Power-off latency exceeded, new value 31666 ns
+Dec  9 04:58:50 gc3imx6dl-abda32 user.warn kernel: PU: Power-off latency exceeded, new value 35334 ns
+Dec  9 05:02:17 gc3imx6dl-abda32 user.warn kernel: PU: Power-off latency exceeded, new value 62334 ns
+Dec  9 05:04:06 gc3imx6dl-abda32 user.warn kernel: PU: Power-on latency exceeded, new value 2752000 ns
+Dec  9 06:02:28 gc3imx6dl-abda32 user.warn kernel: PU: Power-off latency exceeded, new value 63333 ns
+Dec  9 06:02:38 gc3imx6dl-abda32 user.warn kernel: PU: Power-off latency exceeded, new value 66667 ns
+Dec  9 06:25:35 gc3imx6dl-abda32 user.warn kernel: PU: Power-off latency exceeded, new value 202334 ns
+Dec  9 07:26:48 gc3imx6dl-abda32 user.warn kernel: PU: Power-on latency exceeded, new value 2995333 ns
+Dec  9 07:44:39 gc3imx6dl-abda32 user.warn kernel: PU: Power-on latency exceeded, new value 3814000 ns
+Dec  9 08:10:09 gc3imx6dl-abda32 user.warn kernel: imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00080000
+Dec  9 08:21:45 gc3imx6dl-abda32 user.warn kernel: PU: Power-on latency exceeded, new value 3895666 ns
+Dec  9 09:28:49 gc3imx6dl-abda32 user.warn kernel: PU: Power-on latency exceeded, new value 4850667 ns
+Dec  9 10:43:35 gc3imx6dl-abda32 user.warn kernel: PU: Power-off latency exceeded, new value 231333 ns
+Dec  9 11:39:42 gc3imx6dl-abda32 user.warn kernel: PU: Power-on latency exceeded, new value 6376667 ns
+Dec  9 13:29:05 gc3imx6dl-abda32 user.warn kernel: PU: Power-off latency exceeded, new value 245000 ns

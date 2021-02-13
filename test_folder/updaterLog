@@ -1,0 +1,286 @@
+2020-12-09_10:52:17.455 | I | updater_client   | Starting updater client with settings:
+                          Name | Value                                      | Source
+-------------------------------+--------------------------------------------+------------
+                   Server Host | fw-update2.smartthings.com                 | environment
+                   Server Port | 443                                        | environment
+           Signing Pubkey Path | /hub/root/etc//keys/signing.pubkey.pem     | environment
+       Encryption Privkey Path | /hub/root/etc//keys/encryption.privkey.pem | environment
+             Staging Directory | /mnt/update/staging                        | default
+                 CMAC Key Path | /hub/root/etc//keys/cmac.key               | environment
+                  stToken Path | /media/data/encrypted/nsc/stToken          | environment
+Update Notifications Directory |                                            | default
+                    No Hubcore | false                                      | default
+                        No TLS | false                                      | default
+                   TLS CA Path | /hub/root/etc//keys/tlsca.crt.pem          | environment
+                  Golden Image | false                                      | default
+             Factory Directory | /media/data/encrypted/nsc                  | environment
+     Initial Backoff Time (ms) | 5000                                       | default
+     Maximum Backoff Time (ms) | 300000                                     | default
+   Exponenetial Backoff Factor | 1.75                                       | default
+      Backoff randomness (pct) | 0.1                                        | default
+      Update Fetch Timeout (s) | 1800                                       | default
+
+2020-12-09_10:52:17.485 | I | updater_client   | Populating cache for components...
+2020-12-09_10:52:17.510 | W | updater_client   | Failed calculating version for nova-image: Io(Error { repr: Custom(Custom { kind: Other, error: StringError("Error { kind: Http(Io(Error { repr: Os { code: 111, message: \"Connection refused\" } })), url: Some(\"http://localhost:3000/api/v1/ping\") }") }) })
+2020-12-09_10:52:17.510 | I | updater_client   |  - nova-image: version='Unknown', sha224=Sha224("00000000000000000000000000000000000000000000000000000000")
+2020-12-09_10:52:21.018 | I | updater_client   |  - factory-image: version='', sha224=Sha224("c48a5ce63b12baebf2a8fe38e28a737eb7371db3645c1e06aa7b4f3d")
+2020-12-09_10:52:21.021 | E | updater_client   | Error getting panel update status: Error { kind: Http(Io(Error { repr: Os { code: 111, message: "Connection refused" } })), url: Some("http://localhost:3000/api/v1/panel") }
+2020-12-09_10:52:21.021 | I | updater_client   | Platform requests postpone update; will check again in 60 seconds
+2020-12-09_10:53:13.898 | I | updater_client   | Server reports no update available; will check back in 378 seconds
+2020-12-09_10:59:32.428 | I | updater_client   | Server reports no update available; will check back in 357 seconds
+2020-12-09_11:05:29.347 | I | updater_client   | Server reports no update available; will check back in 384 seconds
+2020-12-09_11:11:53.754 | I | updater_client   | Server reports no update available; will check back in 620 seconds
+2020-12-09_11:22:15.013 | I | updater_client   | Server reports no update available; will check back in 375 seconds
+2020-12-09_11:28:30.402 | I | updater_client   | Server reports no update available; will check back in 325 seconds
+2020-12-09_11:33:55.117 | I | updater_client   | Server reports no update available; will check back in 440 seconds
+2020-12-09_11:41:15.587 | I | updater_client   | Server reports no update available; will check back in 398 seconds
+2020-12-09_11:47:54.006 | I | updater_client   | Server reports no update available; will check back in 362 seconds
+2020-12-09_11:53:56.641 | I | updater_client   | Server reports no update available; will check back in 320 seconds
+2020-12-09_11:59:17.321 | I | updater_client   | Server reports no update available; will check back in 627 seconds
+2020-12-09_12:09:45.097 | I | updater_client   | Server reports no update available; will check back in 423 seconds
+2020-12-09_12:16:47.658 | I | updater_client   | Server reports no update available; will check back in 360 seconds
+2020-12-09_12:22:49.037 | I | updater_client   | Server reports no update available; will check back in 406 seconds
+2020-12-09_12:29:34.659 | I | updater_client   | Server reports no update available; will check back in 337 seconds
+2020-12-09_12:35:12.182 | I | updater_client   | Server reports no update available; will check back in 340 seconds
+2020-12-09_12:40:52.806 | I | updater_client   | Server reports no update available; will check back in 340 seconds
+2020-12-09_12:46:33.377 | I | updater_client   | Server reports no update available; will check back in 434 seconds
+2020-12-09_12:53:47.378 | I | updater_client   | Server reports no update available; will check back in 402 seconds
+2020-12-09_13:00:29.802 | I | updater_client   | Server reports no update available; will check back in 417 seconds
+2020-12-09_13:07:27.286 | I | updater_client   | Server reports no update available; will check back in 397 seconds
+2020-12-09_13:14:04.819 | I | updater_client   | Server reports no update available; will check back in 360 seconds
+2020-12-09_13:20:05.472 | I | updater_client   | Server reports no update available; will check back in 687 seconds
+2020-12-09_13:31:32.390 | I | updater_client   | Server reports no update available; will check back in 316 seconds
+2020-12-09_13:36:49.148 | I | updater_client   | Server reports no update available; will check back in 367 seconds
+2020-12-09_13:42:56.508 | I | updater_client   | Server reports no update available; will check back in 378 seconds
+2020-12-09_13:49:15.549 | I | updater_client   | Server reports no update available; will check back in 332 seconds
+2020-12-09_13:54:47.394 | I | updater_client   | Server reports no update available; will check back in 424 seconds
+2020-12-09_14:01:51.994 | I | updater_client   | Server reports no update available; will check back in 345 seconds
+2020-12-09_14:07:37.586 | I | updater_client   | Server reports no update available; will check back in 409 seconds
+2020-12-09_14:14:27.016 | I | updater_client   | Server reports no update available; will check back in 429 seconds
+2020-12-09_14:21:36.764 | I | updater_client   | Server reports no update available; will check back in 427 seconds
+2020-12-09_14:28:44.031 | I | updater_client   | Server reports no update available; will check back in 446 seconds
+2020-12-09_14:36:10.671 | I | updater_client   | Server reports no update available; will check back in 382 seconds
+2020-12-09_14:42:32.304 | I | updater_client   | Server reports no update available; will check back in 684 seconds
+2020-12-09_14:53:57.198 | I | updater_client   | Server reports no update available; will check back in 328 seconds
+2020-12-09_14:59:25.881 | I | updater_client   | Server reports no update available; will check back in 372 seconds
+2020-12-09_15:05:38.126 | I | updater_client   | Server reports no update available; will check back in 440 seconds
+2020-12-09_15:12:58.679 | I | updater_client   | Server reports no update available; will check back in 316 seconds
+2020-12-09_15:18:14.662 | I | updater_client   | Server reports no update available; will check back in 367 seconds
+2020-12-09_15:24:21.695 | I | updater_client   | Server reports no update available; will check back in 431 seconds
+2020-12-09_15:31:33.462 | I | updater_client   | Server reports no update available; will check back in 384 seconds
+2020-12-09_15:37:57.940 | I | updater_client   | Server reports no update available; will check back in 353 seconds
+2020-12-09_15:43:51.636 | I | updater_client   | Server reports no update available; will check back in 422 seconds
+2020-12-09_15:50:53.422 | I | updater_client   | Server reports no update available; will check back in 352 seconds
+2020-12-09_15:56:46.061 | I | updater_client   | Server reports no update available; will check back in 365 seconds
+2020-12-09_16:02:51.726 | I | updater_client   | Server reports no update available; will check back in 375 seconds
+2020-12-09_16:09:06.929 | I | updater_client   | Server reports no update available; will check back in 699 seconds
+2020-12-09_16:20:47.117 | I | updater_client   | Server reports no update available; will check back in 616 seconds
+2020-12-09_16:31:03.259 | I | updater_client   | Server reports no update available; will check back in 393 seconds
+2020-12-09_16:37:36.788 | I | updater_client   | Server reports no update available; will check back in 316 seconds
+2020-12-09_16:42:53.315 | I | updater_client   | Server reports no update available; will check back in 683 seconds
+2020-12-09_16:54:16.210 | I | updater_client   | Server reports no update available; will check back in 416 seconds
+2020-12-09_17:01:12.629 | I | updater_client   | Server reports no update available; will check back in 395 seconds
+2020-12-09_17:07:48.541 | I | updater_client   | Server reports no update available; will check back in 379 seconds
+2020-12-09_17:14:08.629 | I | updater_client   | Server reports no update available; will check back in 367 seconds
+2020-12-09_17:20:15.258 | I | updater_client   | Server reports no update available; will check back in 357 seconds
+2020-12-09_17:26:12.673 | I | updater_client   | Server reports no update available; will check back in 372 seconds
+2020-12-09_17:32:25.371 | I | updater_client   | Server reports no update available; will check back in 641 seconds
+2020-12-09_17:43:07.097 | I | updater_client   | Server reports no update available; will check back in 421 seconds
+2020-12-09_17:50:08.293 | I | updater_client   | Server reports no update available; will check back in 387 seconds
+2020-12-09_17:56:35.880 | I | updater_client   | Server reports no update available; will check back in 351 seconds
+2020-12-09_18:02:27.526 | I | updater_client   | Server reports no update available; will check back in 680 seconds
+2020-12-09_18:13:47.518 | I | updater_client   | Server reports no update available; will check back in 334 seconds
+2020-12-09_18:19:22.135 | I | updater_client   | Server reports no update available; will check back in 383 seconds
+2020-12-09_18:25:46.025 | I | updater_client   | Server reports no update available; will check back in 329 seconds
+2020-12-09_18:31:15.302 | I | updater_client   | Server reports no update available; will check back in 393 seconds
+2020-12-09_18:37:48.759 | I | updater_client   | Server reports no update available; will check back in 611 seconds
+2020-12-09_18:47:59.535 | I | updater_client   | Server reports no update available; will check back in 352 seconds
+2020-12-09_18:53:52.354 | I | updater_client   | Server reports no update available; will check back in 713 seconds
+2020-12-09_19:05:45.956 | I | updater_client   | Server reports no update available; will check back in 409 seconds
+2020-12-09_19:12:35.299 | I | updater_client   | Server reports no update available; will check back in 391 seconds
+2020-12-09_19:19:06.781 | I | updater_client   | Server reports no update available; will check back in 377 seconds
+2020-12-09_19:25:24.024 | I | updater_client   | Server reports no update available; will check back in 357 seconds
+2020-12-09_19:31:21.538 | I | updater_client   | Server reports no update available; will check back in 429 seconds
+2020-12-09_19:38:30.815 | I | updater_client   | Server reports no update available; will check back in 358 seconds
+2020-12-09_19:44:29.342 | I | updater_client   | Server reports no update available; will check back in 368 seconds
+2020-12-09_19:50:37.908 | I | updater_client   | Server reports no update available; will check back in 426 seconds
+2020-12-09_19:57:44.352 | I | updater_client   | Server reports no update available; will check back in 348 seconds
+2020-12-09_20:03:32.492 | I | updater_client   | Server reports no update available; will check back in 371 seconds
+2020-12-09_20:09:43.808 | I | updater_client   | Server reports no update available; will check back in 357 seconds
+2020-12-09_20:15:41.413 | I | updater_client   | Server reports no update available; will check back in 400 seconds
+2020-12-09_20:22:21.989 | I | updater_client   | Server reports no update available; will check back in 321 seconds
+2020-12-09_20:27:43.579 | I | updater_client   | Server reports no update available; will check back in 328 seconds
+2020-12-09_20:33:12.267 | I | updater_client   | Server reports no update available; will check back in 339 seconds
+2020-12-09_20:38:51.862 | I | updater_client   | Server reports no update available; will check back in 385 seconds
+2020-12-09_20:45:16.508 | I | updater_client   | Server reports no update available; will check back in 712 seconds
+2020-12-09_20:57:08.924 | I | updater_client   | Server reports no update available; will check back in 387 seconds
+2020-12-09_21:03:36.761 | I | updater_client   | Server reports no update available; will check back in 688 seconds
+2020-12-09_21:15:04.859 | I | updater_client   | Server reports no update available; will check back in 372 seconds
+2020-12-09_21:21:17.616 | I | updater_client   | Server reports no update available; will check back in 693 seconds
+2020-12-09_21:32:50.677 | I | updater_client   | Server reports no update available; will check back in 413 seconds
+2020-12-09_21:39:44.586 | I | updater_client   | Server reports no update available; will check back in 384 seconds
+2020-12-09_21:46:09.019 | I | updater_client   | Server reports no update available; will check back in 716 seconds
+2020-12-09_21:58:06.275 | I | updater_client   | Server reports no update available; will check back in 335 seconds
+2020-12-09_22:03:41.509 | I | updater_client   | Server reports no update available; will check back in 716 seconds
+2020-12-09_22:15:37.384 | I | updater_client   | Server reports no update available; will check back in 393 seconds
+2020-12-09_22:22:11.175 | I | updater_client   | Server reports no update available; will check back in 341 seconds
+2020-12-09_22:27:53.055 | I | updater_client   | Server reports no update available; will check back in 341 seconds
+2020-12-09_22:33:34.452 | I | updater_client   | Server reports no update available; will check back in 330 seconds
+2020-12-09_22:39:04.519 | I | updater_client   | Server reports no update available; will check back in 341 seconds
+2020-12-09_22:44:45.869 | I | updater_client   | Server reports no update available; will check back in 378 seconds
+2020-12-09_22:51:04.811 | I | updater_client   | Server reports no update available; will check back in 325 seconds
+2020-12-09_22:56:29.734 | I | updater_client   | Server reports no update available; will check back in 422 seconds
+2020-12-09_23:03:31.788 | I | updater_client   | Server reports no update available; will check back in 413 seconds
+2020-12-09_23:10:25.488 | I | updater_client   | Server reports no update available; will check back in 418 seconds
+2020-12-09_23:17:23.791 | I | updater_client   | Server reports no update available; will check back in 349 seconds
+2020-12-09_23:23:13.372 | I | updater_client   | Server reports no update available; will check back in 395 seconds
+2020-12-09_23:29:49.173 | I | updater_client   | Server reports no update available; will check back in 396 seconds
+2020-12-09_23:36:25.445 | I | updater_client   | Server reports no update available; will check back in 386 seconds
+2020-12-09_23:42:51.469 | I | updater_client   | Server reports no update available; will check back in 340 seconds
+2020-12-09_23:48:32.174 | I | updater_client   | Server reports no update available; will check back in 390 seconds
+2020-12-09_23:55:03.217 | I | updater_client   | Server reports no update available; will check back in 681 seconds
+2020-12-10_00:06:24.347 | I | updater_client   | Server reports no update available; will check back in 428 seconds
+2020-12-10_00:13:32.600 | I | updater_client   | Server reports no update available; will check back in 329 seconds
+2020-12-10_00:19:01.348 | I | updater_client   | Server reports no update available; will check back in 340 seconds
+2020-12-10_00:24:41.829 | I | updater_client   | Server reports no update available; will check back in 421 seconds
+2020-12-10_00:31:43.294 | I | updater_client   | Server reports no update available; will check back in 412 seconds
+2020-12-10_00:38:36.089 | I | updater_client   | Server reports no update available; will check back in 357 seconds
+2020-12-10_00:44:32.843 | I | updater_client   | Server reports no update available; will check back in 351 seconds
+2020-12-10_00:50:24.441 | I | updater_client   | Server reports no update available; will check back in 615 seconds
+2020-12-10_01:00:40.156 | I | updater_client   | Server reports no update available; will check back in 363 seconds
+2020-12-10_01:06:43.567 | I | updater_client   | Server reports no update available; will check back in 671 seconds
+2020-12-10_01:17:55.050 | I | updater_client   | Server reports no update available; will check back in 372 seconds
+2020-12-10_01:24:07.205 | I | updater_client   | Server reports no update available; will check back in 414 seconds
+2020-12-10_01:31:01.496 | I | updater_client   | Server reports no update available; will check back in 698 seconds
+2020-12-10_01:42:40.002 | I | updater_client   | Server reports no update available; will check back in 399 seconds
+2020-12-10_01:49:19.348 | I | updater_client   | Server reports no update available; will check back in 617 seconds
+2020-12-10_01:59:36.931 | I | updater_client   | Server reports no update available; will check back in 366 seconds
+2020-12-10_02:05:43.361 | I | updater_client   | Server reports no update available; will check back in 315 seconds
+2020-12-10_02:10:58.653 | I | updater_client   | Server reports no update available; will check back in 371 seconds
+2020-12-10_02:17:10.376 | I | updater_client   | Server reports no update available; will check back in 382 seconds
+2020-12-10_02:23:33.420 | I | updater_client   | Server reports no update available; will check back in 417 seconds
+2020-12-10_02:30:30.194 | I | updater_client   | Server reports no update available; will check back in 375 seconds
+2020-12-10_02:36:45.668 | I | updater_client   | Server reports no update available; will check back in 339 seconds
+2020-12-10_02:42:25.157 | I | updater_client   | Server reports no update available; will check back in 356 seconds
+2020-12-10_02:48:21.174 | I | updater_client   | Server reports no update available; will check back in 383 seconds
+2020-12-10_02:54:44.909 | I | updater_client   | Server reports no update available; will check back in 386 seconds
+2020-12-10_03:01:11.366 | I | updater_client   | Server reports no update available; will check back in 641 seconds
+2020-12-10_03:11:52.479 | I | updater_client   | Server reports no update available; will check back in 356 seconds
+2020-12-10_03:17:48.847 | I | updater_client   | Server reports no update available; will check back in 709 seconds
+2020-12-10_03:29:39.095 | I | updater_client   | Server reports no update available; will check back in 375 seconds
+2020-12-10_03:35:54.672 | I | updater_client   | Server reports no update available; will check back in 413 seconds
+2020-12-10_03:42:47.509 | I | updater_client   | Server reports no update available; will check back in 671 seconds
+2020-12-10_03:53:58.976 | I | updater_client   | Server reports no update available; will check back in 345 seconds
+2020-12-10_03:59:44.399 | I | updater_client   | Server reports no update available; will check back in 384 seconds
+2020-12-10_04:06:09.072 | I | updater_client   | Server reports no update available; will check back in 390 seconds
+2020-12-10_04:12:38.960 | I | updater_client   | Server reports no update available; will check back in 410 seconds
+2020-12-10_04:19:29.888 | I | updater_client   | Server reports no update available; will check back in 366 seconds
+2020-12-10_04:25:35.961 | I | updater_client   | Server reports no update available; will check back in 335 seconds
+2020-12-10_04:31:11.264 | I | updater_client   | Server reports no update available; will check back in 345 seconds
+2020-12-10_04:36:56.769 | I | updater_client   | Server reports no update available; will check back in 374 seconds
+2020-12-10_04:43:10.824 | I | updater_client   | Server reports no update available; will check back in 369 seconds
+2020-12-10_04:49:20.773 | I | updater_client   | Server reports no update available; will check back in 328 seconds
+2020-12-10_04:54:49.555 | I | updater_client   | Server reports no update available; will check back in 367 seconds
+2020-12-10_05:00:56.918 | I | updater_client   | Server reports no update available; will check back in 364 seconds
+2020-12-10_05:07:01.437 | I | updater_client   | Server reports no update available; will check back in 353 seconds
+2020-12-10_05:12:53.879 | I | updater_client   | Server reports no update available; will check back in 374 seconds
+2020-12-10_05:19:08.603 | I | updater_client   | Server reports no update available; will check back in 364 seconds
+2020-12-10_05:25:13.178 | I | updater_client   | Server reports no update available; will check back in 368 seconds
+2020-12-10_05:31:21.897 | I | updater_client   | Server reports no update available; will check back in 404 seconds
+2020-12-10_05:38:06.281 | I | updater_client   | Server reports no update available; will check back in 365 seconds
+2020-12-10_05:44:11.012 | I | updater_client   | Server reports no update available; will check back in 331 seconds
+2020-12-10_05:49:42.540 | I | updater_client   | Server reports no update available; will check back in 404 seconds
+2020-12-10_05:56:27.405 | I | updater_client   | Server reports no update available; will check back in 344 seconds
+2020-12-10_06:02:11.792 | I | updater_client   | Server reports no update available; will check back in 379 seconds
+2020-12-10_06:08:31.299 | I | updater_client   | Server reports no update available; will check back in 358 seconds
+2020-12-10_06:14:29.890 | I | updater_client   | Server reports no update available; will check back in 372 seconds
+2020-12-10_06:20:42.045 | I | updater_client   | Server reports no update available; will check back in 409 seconds
+2020-12-10_06:27:30.954 | I | updater_client   | Server reports no update available; will check back in 351 seconds
+2020-12-10_06:33:22.460 | I | updater_client   | Server reports no update available; will check back in 354 seconds
+2020-12-10_06:39:16.982 | I | updater_client   | Server reports no update available; will check back in 373 seconds
+2020-12-10_06:45:30.857 | I | updater_client   | Server reports no update available; will check back in 389 seconds
+2020-12-10_06:51:59.471 | I | updater_client   | Server reports no update available; will check back in 380 seconds
+2020-12-10_06:58:19.906 | I | updater_client   | Server reports no update available; will check back in 432 seconds
+2020-12-10_07:05:32.956 | I | updater_client   | Server reports no update available; will check back in 395 seconds
+2020-12-10_07:12:08.292 | I | updater_client   | Server reports no update available; will check back in 600 seconds
+2020-12-10_07:22:08.249 | I | updater_client   | Server reports no update available; will check back in 363 seconds
+2020-12-10_07:28:12.099 | I | updater_client   | Server reports no update available; will check back in 388 seconds
+2020-12-10_07:34:40.628 | I | updater_client   | Server reports no update available; will check back in 441 seconds
+2020-12-10_07:42:02.195 | I | updater_client   | Server reports no update available; will check back in 377 seconds
+2020-12-10_07:48:18.780 | I | updater_client   | Server reports no update available; will check back in 654 seconds
+2020-12-10_07:59:14.006 | I | updater_client   | Server reports no update available; will check back in 406 seconds
+2020-12-10_08:06:00.354 | I | updater_client   | Server reports no update available; will check back in 421 seconds
+2020-12-10_08:13:01.801 | I | updater_client   | Server reports no update available; will check back in 371 seconds
+2020-12-10_08:19:13.313 | I | updater_client   | Server reports no update available; will check back in 342 seconds
+2020-12-10_08:24:55.125 | I | updater_client   | Server reports no update available; will check back in 670 seconds
+2020-12-10_08:36:06.035 | I | updater_client   | Server reports no update available; will check back in 328 seconds
+2020-12-10_08:41:34.100 | I | updater_client   | Server reports no update available; will check back in 612 seconds
+2020-12-10_08:51:46.536 | I | updater_client   | Server reports no update available; will check back in 403 seconds
+2020-12-10_08:58:30.364 | I | updater_client   | Server reports no update available; will check back in 621 seconds
+2020-12-10_09:08:52.039 | I | updater_client   | Server reports no update available; will check back in 389 seconds
+2020-12-10_09:15:21.229 | I | updater_client   | Server reports no update available; will check back in 403 seconds
+2020-12-10_09:22:04.702 | I | updater_client   | Server reports no update available; will check back in 329 seconds
+2020-12-10_09:27:33.255 | I | updater_client   | Server reports no update available; will check back in 424 seconds
+2020-12-10_09:34:37.676 | I | updater_client   | Server reports no update available; will check back in 404 seconds
+2020-12-10_09:41:22.158 | I | updater_client   | Server reports no update available; will check back in 338 seconds
+2020-12-10_09:47:00.740 | I | updater_client   | Server reports no update available; will check back in 409 seconds
+2020-12-10_09:53:50.156 | I | updater_client   | Server reports no update available; will check back in 414 seconds
+2020-12-10_10:00:44.596 | I | updater_client   | Server reports no update available; will check back in 382 seconds
+2020-12-10_10:07:07.155 | I | updater_client   | Server reports no update available; will check back in 311 seconds
+2020-12-10_10:12:18.076 | I | updater_client   | Server reports no update available; will check back in 354 seconds
+2020-12-10_10:18:13.329 | I | updater_client   | Server reports no update available; will check back in 414 seconds
+2020-12-10_10:25:06.884 | I | updater_client   | Server reports no update available; will check back in 416 seconds
+2020-12-10_10:32:03.338 | I | updater_client   | Server reports no update available; will check back in 328 seconds
+2020-12-10_10:37:31.670 | I | updater_client   | Server reports no update available; will check back in 369 seconds
+2020-12-10_10:43:41.239 | I | updater_client   | Server reports no update available; will check back in 335 seconds
+2020-12-10_10:49:16.795 | I | updater_client   | Server reports no update available; will check back in 335 seconds
+2020-12-10_10:54:52.613 | I | updater_client   | Server reports no update available; will check back in 313 seconds
+2020-12-10_11:00:05.275 | I | updater_client   | Server reports no update available; will check back in 698 seconds
+2020-12-10_11:11:43.957 | I | updater_client   | Server reports no update available; will check back in 322 seconds
+2020-12-10_11:17:06.636 | I | updater_client   | Server reports no update available; will check back in 340 seconds
+2020-12-10_11:22:47.167 | I | updater_client   | Server reports no update available; will check back in 325 seconds
+2020-12-10_11:28:11.999 | I | updater_client   | Server reports no update available; will check back in 420 seconds
+2020-12-10_11:35:12.359 | I | updater_client   | Server reports no update available; will check back in 394 seconds
+2020-12-10_11:41:46.768 | I | updater_client   | Server reports no update available; will check back in 380 seconds
+2020-12-10_11:48:07.649 | I | updater_client   | Server reports no update available; will check back in 315 seconds
+2020-12-10_11:53:22.254 | I | updater_client   | Server reports no update available; will check back in 370 seconds
+2020-12-10_11:59:33.388 | I | updater_client   | Server reports no update available; will check back in 393 seconds
+2020-12-10_12:06:06.627 | I | updater_client   | Server reports no update available; will check back in 426 seconds
+2020-12-10_12:13:12.999 | I | updater_client   | Server reports no update available; will check back in 411 seconds
+2020-12-10_12:20:04.752 | I | updater_client   | Server reports no update available; will check back in 360 seconds
+2020-12-10_12:26:05.106 | I | updater_client   | Server reports no update available; will check back in 357 seconds
+2020-12-10_12:32:02.571 | I | updater_client   | Server reports no update available; will check back in 360 seconds
+2020-12-10_12:38:02.210 | I | updater_client   | Server reports no update available; will check back in 334 seconds
+2020-12-10_12:43:37.258 | I | updater_client   | Server reports no update available; will check back in 357 seconds
+2020-12-10_12:49:34.134 | I | updater_client   | Server reports no update available; will check back in 607 seconds
+2020-12-10_12:59:42.026 | I | updater_client   | Server reports no update available; will check back in 682 seconds
+2020-12-10_13:11:04.773 | I | updater_client   | Server reports no update available; will check back in 337 seconds
+2020-12-10_13:16:41.705 | I | updater_client   | Server reports no update available; will check back in 401 seconds
+2020-12-10_13:23:23.241 | I | updater_client   | Server reports no update available; will check back in 426 seconds
+2020-12-10_13:30:29.469 | I | updater_client   | Server reports no update available; will check back in 355 seconds
+2020-12-10_13:36:25.029 | I | updater_client   | Server reports no update available; will check back in 353 seconds
+2020-12-10_13:42:18.360 | I | updater_client   | Server reports no update available; will check back in 419 seconds
+2020-12-10_13:49:17.643 | I | updater_client   | Server reports no update available; will check back in 370 seconds
+2020-12-10_13:55:28.264 | I | updater_client   | Server reports no update available; will check back in 347 seconds
+2020-12-10_14:01:15.875 | I | updater_client   | Server reports no update available; will check back in 675 seconds
+2020-12-10_14:12:30.700 | I | updater_client   | Server reports no update available; will check back in 414 seconds
+2020-12-10_14:19:25.310 | I | updater_client   | Server reports no update available; will check back in 380 seconds
+2020-12-10_14:25:45.786 | I | updater_client   | Server reports no update available; will check back in 325 seconds
+2020-12-10_14:31:11.238 | I | updater_client   | Server reports no update available; will check back in 387 seconds
+2020-12-10_14:37:38.723 | I | updater_client   | Server reports no update available; will check back in 392 seconds
+2020-12-10_14:44:11.143 | I | updater_client   | Server reports no update available; will check back in 396 seconds
+2020-12-10_14:50:47.691 | I | updater_client   | Server reports no update available; will check back in 409 seconds
+2020-12-10_14:57:36.742 | I | updater_client   | Server reports no update available; will check back in 601 seconds
+2020-12-10_15:07:38.892 | I | updater_client   | Server reports no update available; will check back in 428 seconds
+2020-12-10_15:14:46.879 | I | updater_client   | Server reports no update available; will check back in 384 seconds
+2020-12-10_15:21:11.445 | I | updater_client   | Server reports no update available; will check back in 394 seconds
+2020-12-10_15:27:45.813 | I | updater_client   | Server reports no update available; will check back in 345 seconds
+2020-12-10_15:33:31.391 | I | updater_client   | Server reports no update available; will check back in 437 seconds
+2020-12-10_15:40:48.709 | I | updater_client   | Server reports no update available; will check back in 341 seconds
+2020-12-10_15:46:30.227 | I | updater_client   | Server reports no update available; will check back in 352 seconds
+2020-12-10_15:52:22.857 | I | updater_client   | Server reports no update available; will check back in 439 seconds
+2020-12-10_15:59:42.380 | I | updater_client   | Server reports no update available; will check back in 346 seconds
+2020-12-10_16:05:28.873 | I | updater_client   | Server reports no update available; will check back in 375 seconds
+2020-12-10_16:11:44.284 | I | updater_client   | Server reports no update available; will check back in 365 seconds
+2020-12-10_16:17:49.405 | I | updater_client   | Server reports no update available; will check back in 372 seconds
+2020-12-10_16:24:01.399 | I | updater_client   | Server reports no update available; will check back in 325 seconds
